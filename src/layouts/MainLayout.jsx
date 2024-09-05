@@ -10,7 +10,7 @@ function MainLayout() {
     {/* Navbar */}
     <Navbar />
     <main>
-        <Outlet />
+        {/* <Outlet /> */}
     </main>
     {/* Footer */}
     </>
