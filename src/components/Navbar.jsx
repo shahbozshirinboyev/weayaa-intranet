@@ -54,6 +54,7 @@ function Navbar() {
         >
           <i className="bi bi-arrow-left-circle w-7 text-[28px] text-custom-green-dark"></i>
         </div>
+
         <div className="flex gap-x-4 items-center">
           <img
             src={logo}
@@ -83,7 +84,9 @@ function Navbar() {
               className={`flex  rounded-[10px] p-2 cursor-pointer bg-custom-green-30 hover:bg-custom-green-dark 
               hover:text-white text-custom-green-dark font-semibold text-sm items-center 
               gap-x-4 
-              ${Menu.gap ? "mt-9" : "mt-2"} ${index === 0 && "bg-custom-green-dark text-white"}`}
+              ${Menu.gap ? "mt-9" : "mt-2"} ${
+                index === 0 && "bg-custom-green-dark text-white"
+              }`}
             >
               <i className={`${Menu.src} text-[20px] mx-[2px]`}></i>
               <span className={`${!open && "hidden"} origin-left duration-200`}>
@@ -100,7 +103,6 @@ function Navbar() {
         } transition-all duration-300`}
       >
         <div className="bg-custom-green-5 h-[60px] w-full rounded-[15px] flex mb-[20px]">
-
           <div className="h-full w-full flex items-center mx-[10px]">
             <div className="flex px-[8px] py-[4px] mx-[5px] rounded-[8px] bg-custom-green-30 text-custom-green-dark font-medium hover:bg-custom-green-dark hover:text-white transition-all duration-100 ease-in-out cursor-pointer">
               <i className="bi bi-calendar2-week font-medium"></i>
@@ -116,20 +118,84 @@ function Navbar() {
               <i className="bi bi-person font-medium"></i>
             </div>
           </div>
-
         </div>
 
-        <div className="grid grid-cols-4 gap-4">
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-          <div className="h-[200px] bg-custom-green-15 rounded-[20px]"></div>
-        </div>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 
+          <div className="bg-custom-green-15 rounded-[20px] p-[15px] text-custom-green-dark">
+
+            <h2 className="font-bold text-[20px] pb-[30px]">Congratulations to everyone, we have finished creating the website!</h2>
+            <p className="text-justify opacity-80 font-medium">
+              Lorem ipsum, dolor sit amet amet consectetur consectetur adipisicing elit. Rerum
+              voluptatibus, cumque odio distinctio voluptate sit quas voluptatem
+              omnis provident explicabo!
+            </p>
+
+            <div className="grid grid-cols-3 pt-[20px] font-bold">
+              
+              <div className="text-start">
+                <span className="mr-[5px]"><i class="bi bi-person-circle"></i></span>
+                <span>Tommy Kim</span>
+              </div>
+
+              <div className="text-center">
+                <span className="mr-[5px]"><i class="bi bi-clock"></i></span>
+                <span>10:45</span>
+              </div>
+
+              <div className="text-end">
+                <span className="mr-[5px]"><i class="bi bi-calendar-week"></i></span>
+                <span>7 Sep. 2024</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="bg-custom-green-15 rounded-[20px] p-[15px] text-custom-green-dark">
+
+            <h2 className="font-bold text-[20px] pb-[30px]">Congratulations to everyone, we have finished creating the website!</h2>
+            <p className="text-justify opacity-80 font-medium">
+              Lorem ipsum, dolor sit amet amet consectetur consectetur adipisicing elit. Rerum
+              voluptatibus, cumque odio distinctio voluptate sit quas voluptatem
+              omnis provident explicabo!
+            </p>
+
+            <div className="grid grid-cols-3 pt-[20px] font-bold">
+              
+              <div className="text-start">
+                <span className="mr-[5px]"><i class="bi bi-person-circle"></i></span>
+                <span>Tommy Kim</span>
+              </div>
+
+              <div className="text-center border">
+                <span className="mr-[5px]"><i class="bi bi-clock"></i></span>
+                <span>10:45</span>
+              </div>
+
+              <div className="text-end">
+                <span className="mr-[5px]"><i class="bi bi-calendar-week"></i></span>
+                <span>24 Aug. 2024</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="group h-[230px] bg-custom-green-5 hover:bg-custom-green-15 transition-all rounded-[20px] cursor-pointer border-[3px] border-dashed border-custom-green-60">
+            <div className="flex items-center justify-center h-full w-full">
+            <i class="bi bi-plus-circle text-[30px] group-hover:text-[35px] transition-all text-custom-green-60"></i>
+            </div>
+          </div>
+
+          {/* <div className="h-[230px] bg-custom-green-15 rounded-[20px]"></div>
+          <div className="h-[230px] bg-custom-green-15 rounded-[20px]"></div>
+          <div className="h-[230px] bg-custom-green-15 rounded-[20px]"></div>
+          <div className="h-[230px] bg-custom-green-15 rounded-[20px]"></div>
+          <div className="h-[230px] bg-custom-green-15 rounded-[20px]"></div>
+          <div className="h-[230px] bg-custom-green-15 rounded-[20px]"></div> */}
+
+        </div>
       </div>
     </div>
   );
