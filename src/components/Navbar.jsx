@@ -46,13 +46,14 @@ function Navbar() {
           open ? "w-[250px]" : "w-[80px]"
         } bg-custom-green-5 h-screen p-5 pt-7 duration-300 fixed`}
       >
+
         <div
           className={`absolute cursor-pointer -right-3 top-[50px] ${
             !open && "rotate-180"
           }`}
           onClick={() => setOpen(!open)}
         >
-          <i className="bi bi-arrow-left-circle w-7 text-[28px] text-custom-green-dark"></i>
+          <i className="bi bi-arrow-left-circle w-7 text-[28px] text-custom-green-60 hover:text-custom-green-dark ease-in-out transition-all"></i>
         </div>
 
         <div className="flex gap-x-4 items-center">
